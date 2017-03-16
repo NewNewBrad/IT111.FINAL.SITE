@@ -34,16 +34,15 @@ HEADER
 */
 
 .header {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  min-height: 56px;
-  transition: min-height 0.3s;
-  height: auto;
+	height: auto;
+	min-height: 56px;
+	transition: min-height 0.3s;
 }
 
 .header__inner {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 
 }
 
@@ -56,35 +55,38 @@ NAV BAR
 
 
 .nav {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+	height: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .nav_list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
 .nav_item {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 19%;
-  text-align: center;
-  line-height: 24px;
-  padding: 24px;
+	width:19%;
+	box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    padding-top: 10px auto 10px auto;
+    text-transform: uppercase;
 }
 
 .nav a {
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  padding: 1.5em;
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .nav a:hover {
-  text-decoration: underline;
-  color: white;
-  background-color: black
+	background-color: #111;
 }
