@@ -9,7 +9,10 @@ body{
 	font-family: Courier;
 	font-size: 12px;
 	color: white;
-	background-color: gray;
+	background-color: black;
+	max-width: 940px;
+	min-width: 470px;
+	border: none;
 }
 
 h1, h2, h3, h4, h5{
@@ -26,6 +29,10 @@ ul{
 	margin: 0;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 
 /******************
 
@@ -36,7 +43,6 @@ HEADER
 .header {
 	height: auto;
 	min-height: 56px;
-	transition: min-height 0.3s;
 }
 
 .header__inner {
@@ -66,7 +72,7 @@ NAV BAR
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
 }
 
 .nav_item {
@@ -105,30 +111,32 @@ main {
   margin-right: auto;
 }
 
+.center{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
 
+.caption{
+
+}
 /******************
 
-Top Content
+Splash
 
 ******************/
 
-.top {
-  width: 100%;
-  position: relative;
-  background-image: url("./images/jaegerEvent.jpg");
-  width: 100%;
-  background-size: cover;
+div#splash{
+	background-image: url(images/jaegerevent940.jpg);
+	width: 100%;
+	height: 370px;
+	background-size: cover;
+	background-position: center top;
+}
+
+p#splash{
+	margin-bottom: 2em;
 }
 
 
-.top article {
-  box-sizing: border-box;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 0;
-  height: 30%;
-  width: 100%;
-  color: #fff;
-  padding: 1.0em .5em 3em 1.0em;
-}
