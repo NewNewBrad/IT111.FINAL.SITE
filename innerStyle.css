@@ -153,7 +153,36 @@ ul {
   height: auto;
   max-width: 465px;
 
- }
+}
+
+
+div#contact_page {
+  width: 100%;
+  max-width: 940px;
+  height: auto;
+  display: inline-block;
+}
+
+img#trevor {
+  width: 470px; 
+}
+
+div#contact_page ul{
+  text-align: center;
+  float: right;
+  font-family: "A Love of Thunder";
+}
+
+div#contact_page li{
+  text-decoration: underline;
+  margin-bottom: 45px;
+  margin-top: 55px;
+  margin-right: 75px;
+  font-family: "A Love of Thunder";
+  line-height: 45px;
+  font-size: 45px;
+}
+
 
  .container_3 {
 
@@ -199,6 +228,7 @@ h2 span {
      text-decoration: underline;
 
 }
+
 
 
 /*********
