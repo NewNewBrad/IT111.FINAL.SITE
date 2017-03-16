@@ -45,16 +45,44 @@ HEADER
   margin-right: auto;
 }
 
-.header__logo {
-  height: 72px;
-  margin-right: 1em;
-  vertical-align: top;
-  margin-top: 12px;
-}
-
 
 /*
 
 NAV BAR
 
 */
+
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav_list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 19%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: black
+}
