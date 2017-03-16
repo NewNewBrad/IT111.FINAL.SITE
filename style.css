@@ -1,32 +1,23 @@
-*{
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
-body{
-	font-family: Courier;
-	font-size: 12px;
-	color: white;
-	background-color: black;
-	max-width: 940px;
-	min-width: 470px;
-	border: none;
+body {
+  font-size: 12px;
+  color: white;
+  background-color: black
 }
 
-h1, h2, h3, h4, h5{
-	margin: 0;
+h1, h2, h3, h4, h5 {
+  margin: 0; 
 }
 
-header, nav, footer, section, article, div{
-	box-sizing: border-box;
-}
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
 
-ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
 }
 
 img {
@@ -34,109 +25,259 @@ img {
     height: auto;
 }
 
-/******************
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-HEADER
+@font-face {
+  font-family: "A Love of Thunder";
+  src: url("fonts/ALoveofThunder.eot");
+  src: url("fonts/ALoveofThunder.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ALoveofThunder.woff") format("woff"),
+    url("fonts/ALoveofThunder.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-******************/
+
+/*
+ *
+ * Common
+ * 
+ */
+
+
+
+
+/*
+ *
+ * Header
+ *
+ */
 
 .header {
-	height: auto;
-	min-height: 56px;
+  min-height: 56px;
+  transition: min-height 0.3s;
 }
 
 .header__inner {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
 }
 
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
 
-/******************
+.header__title {
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: white;
+}
 
-NAV BAR
+.header img{
+  max-height: 290px;
+}
 
-******************/
-
+/*
+ *
+ * Top Level Navigation
+ *
+ */
 
 .nav {
-	height: auto;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: black
+  font-family: "A Love of Thunder";
 }
 
-.nav_list {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "A Love of Thunder";
 }
 
-.nav_item {
-	width:17%;
-	box-sizing: border-box;
-    display: inline-block;
-    text-align: center;
-    line-height: 24px;
-    padding: 10px 0px 10px auto;
-    text-transform: uppercase;
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 40px;
+  padding: 0.2em;
+  text-transform: uppercase;
+  font-family: "A Love of Thunder";
 }
 
 .nav a {
-	display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  font-size: 3em;
+  font-family: arial;
+  font-family: "A Love of Thunder";
+  width:100%;
+  height:100%;
 }
 
 .nav a:hover {
-	background-color: #111;
+  padding: 0px;
+  display: inline-block;
+  width:100%;
+  height:100%;
+  text-decoration: underline;
+  background-color: white;
+  color: black;
+  font-family: "A Love of Thunder";
 }
 
-/******************
 
-Main Content
-
-******************/
-
+/*
+ *
+ * Main
+ *
+ */
 
 main {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.center{
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
+/*
+ *
+ * Content
+ *
+ */
+
+
+/*
+ *
+ * Hero
+ *
+ */
+
+.hero {
+  width: 100%;
+  position: relative;
+  background-image: url("images/jaegerevent940.jpg");
+  background-size: cover;
+  height: 420px;
 }
 
-.caption{
-
-}
-/******************
-
-Splash
-
-******************/
-
-div#splash{
-	background-image: url(images/jaegerevent940.jpg);
-	width: 100%;
-	height: 370px;
-	background-size: cover;
-	background-position: center top;
+.hero article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  height: 28%;
+  width: 100%;
+  color: #fff;
+  padding: .8em;
 }
 
-p#splash{
-	margin-bottom: 2em;
+.hero h2{
+  font-size: 3.5em;
+  font-family: "A Love of Thunder";
 }
 
+.hero p{
+  font-size: 1.5em;
+  font-family: Arial black;
+}
 
+/*
+ *
+ * Top News
+ *
+ */
+
+.top-news {
+  height: 300px;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em;
+  font-family: Arial black;
+}
+
+.news__title {
+  font-weight: 300;
+  border-bottom: 1px solid #E0E0E0;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "A Love of Thunder";
+}
+
+.news__more {
+  float: right;
+  font-size: .8em;
+  color: white;
+  text-decoration: none;
+  font-family: "A Love of Thunder";
+}
+
+.top-news__item {
+  font-size: 1.3em;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em 0;
+  line-height: 15.2px;
+}
+
+.top-news__item:before {
+  content: "» ";
+}
+
+.top-news__item:last-child {
+  border-bottom: none;
+}
+
+.top-news__item a {
+  font-family: Arial black;
+  text-decoration: none;
+  color: white;
+  padding: 1.3em inherit;
+}
+
+.top-news__item a:hover,
+.top-news__item a:active {
+  text-decoration: underline;
+  font-family: Arial black;
+
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  text-align: center;
+  color: white;
+  border-top: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 1.5em;
+  color: white;
+}
