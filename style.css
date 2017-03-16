@@ -41,21 +41,11 @@ ul {
   font-style: normal;
 }
 
-
-/*
- *
- * Common
- * 
- */
-
-
-
-
-/*
- *
+/**********
+ **********
  * Header
- *
- */
+ **********
+ **********/
 
 .header {
   min-height: 56px;
@@ -88,11 +78,11 @@ ul {
   max-height: 290px;
 }
 
-/*
- *
- * Top Level Navigation
- *
- */
+/**********
+ **********
+ * Nav 
+ **********
+ **********/
 
 .nav {
   width: 100%;
@@ -144,11 +134,11 @@ ul {
 }
 
 
-/*
- *
+/**********
+ **********
  * Main
- *
- */
+ **********
+ **********/
 
 main {
   width: 100%;
@@ -156,20 +146,20 @@ main {
   margin-right: auto;
 }
 
-/*
- *
+/**********
+ **********
  * Content
- *
- */
+ **********
+ **********/
 
 
-/*
- *
- * Hero
- *
- */
+/**********
+ **********
+ * Main
+ **********
+ **********/
 
-.hero {
+.main {
   width: 100%;
   position: relative;
   background-image: url("images/jaegerevent940.jpg");
@@ -177,7 +167,7 @@ main {
   height: 420px;
 }
 
-.hero article {
+.main article {
   box-sizing: border-box;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.5);
@@ -189,12 +179,12 @@ main {
   padding: .8em;
 }
 
-.hero h2{
+.main h2{
   font-size: 3.5em;
   font-family: "A Love of Thunder";
 }
 
-.hero p{
+.main p{
   font-size: 1.5em;
   font-family: Arial black;
 }
