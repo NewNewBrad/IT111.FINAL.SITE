@@ -27,11 +27,11 @@ ul{
 }
 
 
-/*
+/******************
 
 HEADER
 
-*/
+******************/
 
 .header {
 	height: auto;
@@ -47,11 +47,11 @@ HEADER
 }
 
 
-/*
+/******************
 
 NAV BAR
 
-*/
+******************/
 
 
 .nav {
@@ -70,12 +70,12 @@ NAV BAR
 }
 
 .nav_item {
-	width:19%;
+	width:17%;
 	box-sizing: border-box;
     display: inline-block;
     text-align: center;
     line-height: 24px;
-    padding-top: 10px auto 10px auto;
+    padding: 10px 0px 10px auto;
     text-transform: uppercase;
 }
 
@@ -83,10 +83,52 @@ NAV BAR
 	display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 14px 16px;
 }
 
 .nav a:hover {
 	background-color: #111;
+}
+
+/******************
+
+Main Content
+
+******************/
+
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/******************
+
+Top Content
+
+******************/
+
+.top {
+  width: 100%;
+  position: relative;
+  background-image: url("./images/jaegerEvent.jpg");
+  width: 100%;
+  background-size: cover;
+}
+
+
+.top article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+  color: #fff;
+  padding: 1.0em .5em 3em 1.0em;
 }
