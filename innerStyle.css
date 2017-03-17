@@ -230,6 +230,34 @@ h2 span {
 }
 
 
+/*********
+ *********
+ * Img gallery
+ *********
+ *********/
+
+
+div.gallery {
+    margin: 1px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    font-family: "futura-pt-1","futura-pt-2",sans-serif;
+    text-align: center;
+}
 
 /*********
  *********
