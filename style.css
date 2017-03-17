@@ -31,6 +31,15 @@ ul {
   margin: 0;
 }
 
+a {
+  color:white;
+}
+
+a:hover{
+  color: black;
+  background-color: white;
+}
+
 @font-face {
   font-family: "A Love of Thunder";
   src: url("fonts/ALoveofThunder.eot");
@@ -41,11 +50,21 @@ ul {
   font-style: normal;
 }
 
-/**********
+ div#wrapper {
+  width: 940px;
+  padding: 0;
+  margin: 0 auto;
+ }
+
+
+
+ /**********
  **********
  * Header
  **********
  **********/
+
+
 
 .header {
   min-height: 56px;
@@ -78,11 +97,15 @@ ul {
   max-height: 290px;
 }
 
+
+
 /**********
  **********
  * Nav 
  **********
  **********/
+
+
 
 .nav {
   width: 100%;
@@ -134,17 +157,127 @@ ul {
   font-family: "A Love of Thunder";
 }
 
+
+
+
+/**********
+ **********
+ * Main
+ **********
+ **********/
+
+
+
+
+main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_content {
+  width: 100%;
+  position: relative;
+  background-image: url("images/jaegerevent940.jpg");
+  background-size: cover;
+  height: 420px;
+}
+
+.main_content article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  height: 28%;
+  width: 100%;
+  color: #fff;
+  padding: .8em;
+}
+
+.main_content h2{
+  font-size: 3.5em;
+  font-family: "A Love of Thunder";
+}
+
+.main_content p{
+  font-size: 1.5em;
+  font-family: Arial black;
+}
+
+
+
+
+/*********
+ *********
+ * Recent
+ *********
+ *********/
+
+
+
+
+.top-news {
+  width: 100%%;
+  height: 300px;
+  padding: 1em;
+  font-family: Arial black;
+}
+
+.news_title {
+  font-weight: 300;
+  text-decoration: underline;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "A Love of Thunder";
+}
+
+.news_older {
+  float: right;
+  font-size: .8em;
+  color: white;
+  text-decoration: none;
+  font-family: "A Love of Thunder";
+}
+
+.top-news_item {
+  font-size: 1.45em;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em 0;
+  line-height: 15.2px;
+}
+
+.top-news_item:before {
+  content: "» ";
+}
+
+.top-news_item:last-child {
+  border-bottom: none;
+}
+
+.top-news_item a {
+  font-family: Arial black;
+  text-decoration: none;
+  color: white;
+  padding: 1.3em inherit;
+}
+
+.top-news_item a:hover,
+.top-news_item a:active {
+  font-family: Arial black;
+
+}
+
+
+
 /**********
  **********
  * Container 
  **********
  **********/
 
- div#wrapper {
-  width: 940px;
-  padding: 0;
-  margin: 0 auto;
- }
+
+
 
  .container_2 {
   padding:  0;
@@ -154,7 +287,6 @@ ul {
   max-width: 465px;
 
 }
-
 
 div#contact_page {
   width: 100%;
@@ -183,8 +315,7 @@ div#contact_page li{
   font-size: 45px;
 }
 
-
- .container_3 {
+.container_3 {
 
   display: inline-flex;
   height: auto;
@@ -206,8 +337,6 @@ div#contact_page li{
   border: 1px solid white;
 }
 
-a.hover {
-  border: 2px solid white;
 }
 h2 {
   position: absolute;
@@ -226,8 +355,8 @@ h2 span {
      font-family: "A Love of Thunder";
      font-size: 38px; 
      text-decoration: underline;
-
 }
+
 
 
 /*********
@@ -237,15 +366,16 @@ h2 span {
  *********/
 
 
+
 div.gallery {
     margin: 1px;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     float: left;
     width: 180px;
 }
 
 div.gallery:hover {
-    border: 1px solid #777;
+    border: 1px solid white;
 }
 
 div.gallery img {
@@ -259,11 +389,16 @@ div.desc {
     text-align: center;
 }
 
+
+
+
 /*********
  *********
  * Footer
  *********
  *********/
+
+
 
 footer {
   text-align: center;
@@ -271,6 +406,7 @@ footer {
   border-top: 1px solid #E0E0E0;
   padding: 1em;
   width: 100%;
+  font-family: "A Love of Thunder";
 }
 
 footer li {
